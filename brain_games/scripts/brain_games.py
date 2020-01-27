@@ -1,4 +1,7 @@
-import brain_games.scripts.cli as cli
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+from brain_games.scripts import cli
 
 
 def main():
