@@ -8,4 +8,4 @@ import prompt
 def welcome_user():
     """Say hello, be friendly."""
     name = prompt.string('May I have your name? ')
-    print('Hello, {name}!'.format(name=name))
+    print('Hello, {name}!'.format(name=name))  # noqa: T001
