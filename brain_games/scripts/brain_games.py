@@ -7,7 +7,7 @@ from brain_games import cli
 
 def main():
     """Start game."""
-    print('Welcome to the Brain Games!\n')  # noqa: T001
+    print('Welcome to the Brain Games!\n')
     cli.welcome_user()
 
 

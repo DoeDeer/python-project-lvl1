@@ -6,6 +6,13 @@ import prompt
 
 
 def welcome_user():
-    """Say hello, be friendly."""
+    """
+    User greeting function.
+
+    Returns:
+        Inputted user name
+
+    """
     name = prompt.string('May I have your name? ')
-    print('Hello, {name}!'.format(name=name))  # noqa: T001
+    print('Hello, {name}!'.format(name=name))
+    return name
