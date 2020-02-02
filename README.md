@@ -3,5 +3,5 @@
 
 # Brain games  
 This is my project, where i learn to write code good
-Usage example:
-[![Install and usege](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA.svg)](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA)
+Usage example:  
+[![asciicast](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA.svg)](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA)
