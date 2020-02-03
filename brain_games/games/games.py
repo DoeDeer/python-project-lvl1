@@ -62,13 +62,13 @@ def progression_game():  # noqa: WPS210
         question and correct answer as string
 
     """
-    progression_len = 10
+    PROGRESSION_LEN = 10  # noqa: N806
 
     start_number = random.randint(1, 100)
     progression_step = random.randint(1, 20)  # noqa: WPS432
     progression = range(
         start_number,
-        start_number + progression_step * progression_len,
+        start_number + progression_step * PROGRESSION_LEN,
         progression_step,
     )
     progression = list(map(str, progression))
