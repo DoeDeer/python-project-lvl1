@@ -17,4 +17,7 @@ Package installation:
 [![asciicast](https://asciinema.org/a/SeTobCU02N8HHQUZKWcastQ6A.svg)](https://asciinema.org/a/SeTobCU02N8HHQUZKWcastQ6A)  
 
 "Brain progression" game:  
-[![asciicast](https://asciinema.org/a/v0yz0VzOCG152XjH0U2zqeyRj.svg)](https://asciinema.org/a/v0yz0VzOCG152XjH0U2zqeyRj)
+[![asciicast](https://asciinema.org/a/v0yz0VzOCG152XjH0U2zqeyRj.svg)](https://asciinema.org/a/v0yz0VzOCG152XjH0U2zqeyRj)  
+
+"Brain prime number" game:  
+[![asciicast](https://asciinema.org/a/RZQkakk5b5GO63Utxuyqcoh22.svg)](https://asciinema.org/a/RZQkakk5b5GO63Utxuyqcoh22)
