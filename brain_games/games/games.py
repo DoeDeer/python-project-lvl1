@@ -14,7 +14,7 @@ def even_game():
         question and correct answer as string
 
     """
-    question = random.randint(1, 100)  # noqa: S311
+    question = random.randint(1, 100)
     right_answer = 'yes' if not question % 2 else 'no'
     return str(question), right_answer
 
@@ -32,9 +32,9 @@ def calc_game():
         '*': operator.mul,
     }
     question = {
-        'num1': random.randint(1, 100),  # noqa: S311
-        'num2': random.randint(1, 100),  # noqa: S311
-        'operator': random.choice(tuple(operators.keys())),  # noqa: S311
+        'num1': random.randint(1, 100),
+        'num2': random.randint(1, 100),
+        'operator': random.choice(tuple(operators.keys())),
     }
     right_answer = operators[question['operator']](
         question['num1'],
@@ -50,6 +50,31 @@ def gcd_game():
         question and correct answer as string
 
     """
-    question = (random.randint(1, 100), random.randint(1, 100))  # noqa: S311
+    question = (random.randint(1, 100), random.randint(1, 100))
     right_answer = math.gcd(question[0], question[1])
     return '{0} {1}'.format(*question), str(right_answer)
+
+
+def progression_game():  # noqa: WPS210
+    """Progression game logic.
+
+    Returns:
+        question and correct answer as string
+
+    """
+    progression_len = 10
+
+    start_number = random.randint(1, 100)
+    progression_step = random.randint(1, 20)  # noqa: WPS432
+    progression = range(
+        start_number,
+        start_number + progression_step * progression_len,
+        progression_step,
+    )
+    progression = list(map(str, progression))
+    replaced_item_index = random.randint(0, len(progression) - 1)
+
+    right_answer = progression[replaced_item_index]
+    progression[replaced_item_index] = '..'
+
+    return ' '.join(progression), right_answer
