@@ -12,3 +12,6 @@ Package installation:
 
 "Brain calc" game:  
 [![asciicast](https://asciinema.org/a/OJiKEamD7FUeyZi3t3ZEdeQg9.svg)](https://asciinema.org/a/OJiKEamD7FUeyZi3t3ZEdeQg9)  
+
+"Brain gcd" game:  
+[![asciicast](https://asciinema.org/a/SeTobCU02N8HHQUZKWcastQ6A.svg)](https://asciinema.org/a/SeTobCU02N8HHQUZKWcastQ6A)
