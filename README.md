@@ -3,5 +3,12 @@
 
 # Brain games  
 This is my project, where i learn to write code good  
-Usage example:  
-[![asciicast](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA.svg)](https://asciinema.org/a/ocGsli3qpX6zeTiHD1hcH3EXA)
+
+Package installation:  
+[![asciicast](https://asciinema.org/a/pyUettXh4fNmdIJsDvZzJwYU6.svg)](https://asciinema.org/a/pyUettXh4fNmdIJsDvZzJwYU6)  
+
+"Brain even" game:  
+[![asciicast](https://asciinema.org/a/mdoVO7biBF2jR3wif9ymHAWvW.svg)](https://asciinema.org/a/mdoVO7biBF2jR3wif9ymHAWvW)  
+
+"Brain calc" game:  
+[![asciicast](https://asciinema.org/a/OJiKEamD7FUeyZi3t3ZEdeQg9.svg)](https://asciinema.org/a/OJiKEamD7FUeyZi3t3ZEdeQg9)  

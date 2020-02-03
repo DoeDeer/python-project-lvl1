@@ -2,18 +2,16 @@
 
 """Brain games even game executable module."""
 
-from brain_games import cli, games
+from brain_games import cli
+from brain_games.games import engine, games
 
 
 def main():
     """Start game."""
-    print(
-        'Welcome to the Brain Games!\n',
-        'Answer "yes" if number even otherwise answer "no".\n',
-        sep='',
+    name = cli.welcome_user(
+        'Answer "yes" if number even otherwise answer "no".',
     )
-    name = cli.welcome_user()
-    games.even_game(name)
+    engine.core(name, games.even_game)
 
 
 if __name__ == '__main__':
