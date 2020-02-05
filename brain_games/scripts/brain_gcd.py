@@ -3,16 +3,12 @@
 
 """Brain games gcd game executable module."""
 
-from brain_games import cli
-from brain_games.games import engine, games
+from brain_games import engine, games
 
 
 def main():
     """Start game."""
-    name = cli.welcome_user(
-        'Find the greatest common divisor of given numbers.',
-    )
-    engine.core(name, games.gcd_game)
+    engine.run(games.gcd)
 
 
 if __name__ == '__main__':

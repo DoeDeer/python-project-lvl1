@@ -4,17 +4,20 @@
 
 import prompt
 
+from brain_games import cli
 
-def core(name, logic_function):
+
+def run(game):  # noqa: WPS210
     """Start an provided game.
 
     Args:
-        name: name of a player,
-        logic_function: function, that returns question and correct answer.
+        game: game module, that includes game greeting and run function
 
     """
+    name = cli.welcome_user(game.DESCRIPTION)
+
     for _try_num in range(0, 3):
-        question, right_answer = logic_function()
+        question, right_answer = game.run_round()
         print('Question: {question}'.format(question=question))
         user_answer = prompt.string('Your answer: ')
 
