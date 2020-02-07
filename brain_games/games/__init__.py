@@ -4,7 +4,7 @@
 
 from brain_games.games import calc, even, gcd, prime, progression
 
-__all__ = (
+__all__ = (  # noqa: WPS410 TODO: fix later
     'even',
     'calc',
     'gcd',
