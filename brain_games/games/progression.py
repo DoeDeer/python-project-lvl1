@@ -9,7 +9,7 @@ DESCRIPTION = 'What number is missing in the progression?'
 PROGRESSION_LEN = 10
 
 
-def run_round():  # noqa: WPS210
+def run_round():
     """Check missing number in arithmetical progression.
 
     Returns:
