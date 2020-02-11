@@ -6,6 +6,8 @@ import random
 
 DESCRIPTION = 'What number is missing in the progression?'
 
+PROGRESSION_LEN = 10
+
 
 def run_round():  # noqa: WPS210
     """Check missing number in arithmetical progression.
@@ -14,8 +16,6 @@ def run_round():  # noqa: WPS210
         question and correct answer as string
 
     """
-    PROGRESSION_LEN = 10  # noqa: N806
-
     start_number = random.randint(1, 100)
     progression_step = random.randint(1, 20)  # noqa: WPS432
     progression = range(

@@ -15,6 +15,7 @@ def run_round():
         question and correct answer as string
 
     """
-    question = (random.randint(1, 100), random.randint(1, 100))
-    right_answer = math.gcd(question[0], question[1])
-    return '{0} {1}'.format(*question), str(right_answer)
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    right_answer = math.gcd(num1, num2)
+    return '{0} {1}'.format(num1, num2), str(right_answer)

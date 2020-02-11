@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "DoeDeer_brain_games"
-version = "0.7.2"
+version = "0.7.3"
 description = "brain games, study package"
 authors = ["Doe_Deer <gregorylos97@gmail.com>"]
 repository = "https://github.com/DoeDeer/python-project-lvl1"

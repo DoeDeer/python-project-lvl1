@@ -6,8 +6,11 @@ import prompt
 
 from brain_games import cli
 
+WRONG_ANSWER_TEMPLATE = """'{0}' is wrong answer ;(. Correct answer was '{1}'.
+Let's try again, {2}!"""
 
-def run(game):  # noqa: WPS210
+
+def run(game):
     """Start an provided game.
 
     Args:
@@ -21,13 +24,9 @@ def run(game):  # noqa: WPS210
         print('Question: {question}'.format(question=question))
         user_answer = prompt.string('Your answer: ')
 
-        if user_answer == right_answer:
-            print('Correct!')
-        else:
-            output_text = """'{0}' is wrong answer ;(. Correct answer was '{1}'.
-Let's try again, {2}!"""
-            output_text = output_text.format(user_answer, right_answer, name)
-            print(output_text)
+        if user_answer != right_answer:
+            print(WRONG_ANSWER_TEMPLATE.format(user_answer, right_answer, name))
             break
+        print('Correct!')
     else:
         print('Congratulations, {name}!'.format(name=name))

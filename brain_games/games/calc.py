@@ -7,6 +7,12 @@ import random
 
 DESCRIPTION = 'What is the result of the expression?'
 
+OPERATORS = (
+    ('+', operator.add),
+    ('-', operator.sub),
+    ('*', operator.mul),
+)
+
 
 def run_round():
     """Check simple equation.
@@ -15,18 +21,8 @@ def run_round():
         question and correct answer as string
 
     """
-    operators = {
-        '+': operator.add,
-        '-': operator.sub,
-        '*': operator.mul,
-    }
-    question = {
-        'num1': random.randint(1, 100),
-        'num2': random.randint(1, 100),
-        'operator': random.choice(tuple(operators.keys())),
-    }
-    right_answer = operators[question['operator']](
-        question['num1'],
-        question['num2'],
-    )
-    return '{num1} {operator} {num2}'.format(**question), str(right_answer)
+    symbol, operation = random.choice(OPERATORS)
+    num1 = random.randint(1, 100)
+    num2 = random.randint(1, 100)
+    right_answer = operation(num1, num2)
+    return '{0} {1} {2}'.format(num1, symbol, num2), str(right_answer)
